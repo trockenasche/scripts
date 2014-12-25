@@ -1,0 +1,2 @@
+//
+pref("extensions.shownSelectionUI", true);
