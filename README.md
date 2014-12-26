@@ -5,10 +5,12 @@ The `changer.bat` script is for manipulating the FrontMotion Firefox Community E
 It change the following:
 - make an MSI administrative install point
 - change the icons from blue-world to world-with-fox logo
+- adding some config files
+- updating MSI hash table
 - adding latest msi tranfomation file
 
 ## Before you start
-To run this script you need 2 *non-free* files:
+To run this script you need 2 *proprietary* files:
 
 1. ResHacker.exe
   - You can get the Resource Hacker from [here](http://www.angusj.com/resourcehacker/)
