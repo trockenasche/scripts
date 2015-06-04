@@ -1,5 +1,11 @@
-REM Frontmotion Firefox changer Version 1.1.0 by trockenasche
+REM Frontmotion Firefox changer Version 1.2.0 by trockenasche
 @echo off
+
+REM check for all proprietary tools
+IF NOT EXIST MsiFiler.exe GOTO :NOMSIFILER
+IF NOT EXIST Icons\ResHacker.exe GOTO :NORES
+
+REM get version number from MSI file
 FOR %%f IN (*.msi) DO (SET filename=%%f)
 SET "version=%filename:*-=%
 SET "version=%version:-="%
@@ -41,7 +47,25 @@ If "%INPUT%"=="n" GOTO :EXIT
 If "%INPUT%"=="N" GOTO :EXIT
 
 :NOMSI
+ECHO ############  ERROR  ##############
 ECHO There is no MSI file
+ECHO ############  ERROR  ##############
+pause
+EXIT
+
+:NOMSIFILER
+ECHO ############  ERROR  ##############
+ECHO There is no MsiFiler.exe, please download it before you continue,
+ECHO and RTFM ;)
+ECHO ############  ERROR  ##############
+pause
+EXIT
+
+:NORES
+ECHO ############  ERROR  ##############
+ECHO There is no ResHacker.exe, please download it before you continue,
+ECHO and RTFM ;)
+ECHO ############  ERROR  ##############
 pause
 EXIT
 
