@@ -18,15 +18,15 @@ DATA CHANGE - Component | Component | ComponentId | Directory_ | Attributes | Co
 --- | --- | --- | --- | --- | --- | ---
  <> | c54.F_FirefoxMain._INSTALLDIR_DICTIONARIES_x | | | | | de_DE.aff ~~en_US.aff~~
 <br>
-DATA CHANGE - Directory | Directory | Directory_Parent | DefaultDir | 
+DATA CHANGE - Directory | Directory | Directory_Parent | DefaultDir
 --- | --- | --- | ---
  <> | _PROGRAMMENUFOLDER_FRONTMOTION_FIREFOX | | MOZILL~1|Mozilla Firefox ~~FRONTM~1|FrontMotion Firefox~~
 <br>
-DATA CHANGE - Feature | Feature | Feature_Parent | Title | Description | Display | Level | Directory_ | Attributes | 
+DATA CHANGE - Feature | Feature | Feature_Parent | Title | Description | Display | Level | Directory_ | Attributes
 --- | --- | --- | --- | --- | --- | --- | --- | ---
  <> | F_SetDefaultBrowser | | | | | 3 ~~4~~ | | 
 <br>
-DATA CHANGE - File | File | Component_ | FileName | FileSize | Version | Language | Attributes | Sequence | 
+DATA CHANGE - File | File | Component_ | FileName | FileSize | Version | Language | Attributes | Sequence
 --- | --- | --- | --- | --- | --- | --- | --- | ---
  - | en_US.aff
  - | en_US.dic
@@ -34,16 +34,16 @@ DATA CHANGE - File | File | Component_ | FileName | FileSize | Version | Languag
  + | de_DE.aff | c54.F_FirefoxMain._INSTALLDIR_DICTIONARIES_x | de-DE.aff | 18978 | | | 1536 | 78
  + | de_DE.dic | c54.F_FirefoxMain._INSTALLDIR_DICTIONARIES_x | de-DE.dic | 1113107 | | | 1536 | 79
 <br>
-DATA CHANGE - Icon | Name | Data | 
+DATA CHANGE - Icon | Name | Data
 --- | --- | ---
  + | mozilla.ico | Icon.mozilla.ico
  <> | firefox.52.4.0.0.ico.exe | Icon.firefox.52.4.0.0.ico.exe ~~Icon.firefox.52.4.0.0.ico.exe~~
 <br>
-DATA CHANGE - Media | DiskId | LastSequence | DiskPrompt | Cabinet | VolumeLabel | Source | 
+DATA CHANGE - Media | DiskId | LastSequence | DiskPrompt | Cabinet | VolumeLabel | Source
 --- | --- | --- | --- | --- | --- | ---
  <> | 1 | 600 ~~108~~ | | | | 
 <br>
-DATA CHANGE - MsiFileHash | File_ | Options | HashPart1 | HashPart2 | HashPart3 | HashPart4 | 
+DATA CHANGE - MsiFileHash | File_ | Options | HashPart1 | HashPart2 | HashPart3 | HashPart4
 --- | --- | --- | --- | --- | --- | ---
  - | en_US.aff
  - | en_US.dic
@@ -53,12 +53,12 @@ DATA CHANGE - MsiFileHash | File_ | Options | HashPart1 | HashPart2 | HashPart3 
  <> | VisualElements_150.png | | 1574030286 ~~-1704862931~~ | 1785742812 ~~1568697474~~ | 718587260 ~~1032327367~~ | -763802862 ~~-1241782593~~
  <> | VisualElements_70.png | | -785444957 ~~-1061646584~~ | 1559517179 ~~-2112712698~~ | 369161773 ~~1639502778~~ | 123592967 ~~-1023656082~~
 <br>
-DATA CHANGE - Property | Property | Value | 
+DATA CHANGE - Property | Property | Value
 --- | --- | --- 
  <> | ARPPRODUCTICON | mozilla.ico ~~firefox.52.4.0.0.ico.exe~~
  <> | IAgree | Yes ~~No~~
 <br>
-DATA CHANGE - Shortcut | Shortcut | Directory_ | Name | Component_ | Target | Arguments | Description | Hotkey | Icon_ | IconIndex | ShowCmd | WkDir | DisplayResourceDLL | DisplayResourceId | DescriptionResourceDLL | DescriptionResourceId | 
+DATA CHANGE - Shortcut | Shortcut | Directory_ | Name | Component_ | Target | Arguments | Description | Hotkey | Icon_ | IconIndex | ShowCmd | WkDir | DisplayResourceDLL | DisplayResourceId | DescriptionResourceDLL | DescriptionResourceId
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
  <> | ScKey001 | | MOZILL~1\|Mozilla Firefox ~~FRONTM~1\|FrontMotion Firefox~~ | | | | Start Mozilla Firefox ~~Run FrontMotion Firefox (Version 52.4.0.0).~~ | | mozilla.ico ~~firefox.52.4.0.0.ico.exe~~ | | | | | | | 
  <> | ScKey002 | | MOZILL~1\|Mozilla Firefox ~~FRONTM~1\|FrontMotion Firefox~~ | | | | Start Mozilla Firefox ~~Run FrontMotion Firefox (Version 52.4.0.0).~~ | | mozilla.ico ~~firefox.52.4.0.0.ico.exe~~ | | | | | | | 
