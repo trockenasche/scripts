@@ -10,3 +10,4 @@ SaveAs= Firefox.exe
 -addoverwrite Icon_4.ico, ICONGROUP,4,0
 -addoverwrite Icon_5.ico, ICONGROUP,5,0
 -addoverwrite Icon_32512.ico, ICONGROUP,32512,0
+-addoverwrite string.res, STRINGTABLE,7,1033

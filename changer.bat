@@ -1,5 +1,5 @@
-REM Frontmotion Firefox changer Version 1.2.1 by trockenasche
-@echo on
+REM Frontmotion Firefox changer Version 1.3.0 by trockenasche
+@echo off
 
 REM check for all proprietary tools
 IF NOT EXIST MsiFiler.exe GOTO :NOMSIFILER
@@ -18,16 +18,24 @@ REM extracting the msi file to folder
 msiexec /qb /a %filename% TARGETDIR="%cd%\%version%\"
 
 REM copy all change to the extracted folder
-xcopy /E /Y "change\*.*" "%version%\"
+xcopy /E /Y "mods\*.*" "%version%\"
+
+REM updating omni.ja
+cd "%version%\Program Files\Mozilla Firefox\browser\omni"
+"..\..\..\..\..\7za.exe" u -xr!thumbs.db -r ..\omni.ja *
+cd "..\..\..\..\..\
+RMDIR /S /Q "%version%\Program Files\Mozilla Firefox\browser\omni"
 
 REM change the icon in the exe-resources
 xcopy /y "%version%\Program Files\Mozilla Firefox\firefox.exe" "Icons\"
 cd Icons\
 ResHacker.exe -script iconchange.res
+rcedit-x86.exe firefox.exe --set-version-string "FileDescription" "Firefox"
+rcedit-x86.exe firefox.exe --set-version-string "ProductName" "Firefox
 cd ..
 move /y "Icons\firefox.exe" "%version%\Program Files\Mozilla Firefox\"
 
-REM MsiFiler populates the file table with file versions and sizes based on the copied file from the "change" directory
+REM MsiFiler populates the file table with file versions and sizes based on the copied file from the "mods" directory
 ECHO MsiFiler is working...
 START /B "" "MsiFiler.Exe" -d "%version%\%filename%"
 REM the loop is just for the progressbar
@@ -73,9 +81,9 @@ ECHO ############  ERROR  ##############
 GOTO :EXIT2
 
 :EXIT
-ECHO ----finished! Go ahead, deploy!----
+ECHO ----Finished! Go ahead, deploy!----
 :EXIT2
-pause
 SET version=
 SET filename=
 SET fileold=
+pause

@@ -2,12 +2,13 @@ FrontMotion-Firefox-Changer
 ===========================
 The `changer.bat` script is for manipulating the FrontMotion Firefox Community Edition MSI package
 
-It change the following:
+It will do the following things:
 - make an MSI administrative install point
 - change the icons from blue-world to world-with-fox logo
 - adding some config files
 - updating MSI hash table
-- adding latest msi tranfomation file
+- adding latest [msi tranfomation file](firefox.mst.md)
+
 
 ## Before you start
 To run this script you need 2 *proprietary* files:
