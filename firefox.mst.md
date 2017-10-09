@@ -21,7 +21,7 @@ DATA CHANGE - Component | Component | ComponentId | Directory_ | Attributes | Co
 
 DATA CHANGE - Directory | Directory | Directory_Parent | DefaultDir
 --- | --- | --- | ---
- <> | _PROGRAMMENUFOLDER_FRONTMOTION_FIREFOX | | MOZILL~1\|Mozilla Firefox ~~FRONTM~1\|FrontMotion Firefox~~
+ <> | _PROGRAMMENUFOLDER_FRONTMOTION_FIREFOX | | MOZILL\~1\|Mozilla Firefox ~~FRONTM\~1\|FrontMotion Firefox~~
 
 
 DATA CHANGE - Feature | Feature | Feature_Parent | Title | Description | Display | Level | Directory_ | Attributes
@@ -68,5 +68,5 @@ DATA CHANGE - Property | Property | Value
 
 DATA CHANGE - Shortcut | Shortcut | Directory_ | Name | Component_ | Target | Arguments | Description | Hotkey | Icon_ | IconIndex | ShowCmd | WkDir | DisplayResourceDLL | DisplayResourceId | DescriptionResourceDLL | DescriptionResourceId
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
- <> | ScKey001 | | MOZILL~1\|Mozilla Firefox ~~FRONTM~1\|FrontMotion Firefox~~ | | | | Start Mozilla Firefox ~~Run FrontMotion Firefox (Version 52.4.0.0).~~ | | mozilla.ico ~~firefox.52.4.0.0.ico.exe~~ | | | | | | | 
- <> | ScKey002 | | MOZILL~1\|Mozilla Firefox ~~FRONTM~1\|FrontMotion Firefox~~ | | | | Start Mozilla Firefox ~~Run FrontMotion Firefox (Version 52.4.0.0).~~ | | mozilla.ico ~~firefox.52.4.0.0.ico.exe~~ | | | | | | | 
+ <> | ScKey001 | | MOZILL\~1\|Mozilla Firefox ~~FRONTM\~1\|FrontMotion Firefox~~ | | | | Start Mozilla Firefox ~~Run FrontMotion Firefox (Version 52.4.0.0).~~ | | mozilla.ico ~~firefox.52.4.0.0.ico.exe~~ | | | | | | | 
+ <> | ScKey002 | | MOZILL\~1\|Mozilla Firefox ~~FRONTM\~1\|FrontMotion Firefox~~ | | | | Start Mozilla Firefox ~~Run FrontMotion Firefox (Version 52.4.0.0).~~ | | mozilla.ico ~~firefox.52.4.0.0.ico.exe~~ | | | | | | | 
