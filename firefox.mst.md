@@ -31,16 +31,16 @@ DATA CHANGE - Feature | Feature | Feature_Parent | Title | Description | Display
 
 DATA CHANGE - File | File | Component_ | FileName | FileSize | Version | Language | Attributes | Sequence
 --- | --- | --- | --- | --- | --- | --- | --- | ---
- - | en_US.aff
- - | en_US.dic
- + | custom.js | c53.F_FirefoxMain._INSTALLDIR_DEFAULTS_PREF_x | custom.js | 46 | | | 1536 | 502
- + | de_DE.aff | c54.F_FirefoxMain._INSTALLDIR_DICTIONARIES_x | de-DE.aff | 18978 | | | 1536 | 78
- + | de_DE.dic | c54.F_FirefoxMain._INSTALLDIR_DICTIONARIES_x | de-DE.dic | 1113107 | | | 1536 | 79
+ \- | en_US.aff
+ \- | en_US.dic
+ \+ | custom.js | c53.F_FirefoxMain._INSTALLDIR_DEFAULTS_PREF_x | custom.js | 46 | | | 1536 | 502
+ \+ | de_DE.aff | c54.F_FirefoxMain._INSTALLDIR_DICTIONARIES_x | de-DE.aff | 18978 | | | 1536 | 78
+ \+ | de_DE.dic | c54.F_FirefoxMain._INSTALLDIR_DICTIONARIES_x | de-DE.dic | 1113107 | | | 1536 | 79
 
 
 DATA CHANGE - Icon | Name | Data
 --- | --- | ---
- + | mozilla.ico | Icon.mozilla.ico
+ \+ | mozilla.ico | Icon.mozilla.ico
  <> | firefox.52.4.0.0.ico.exe | Icon.firefox.52.4.0.0.ico.exe ~~Icon.firefox.52.4.0.0.ico.exe~~
 
  
@@ -51,11 +51,11 @@ DATA CHANGE - Media | DiskId | LastSequence | DiskPrompt | Cabinet | VolumeLabel
 
 DATA CHANGE - MsiFileHash | File_ | Options | HashPart1 | HashPart2 | HashPart3 | HashPart4
 --- | --- | --- | --- | --- | --- | ---
- - | en_US.aff
- - | en_US.dic
- + | custom.js | 0 | 1819190932 | 1869607806 | 899243074 | 1372911033
- + | de_DE.aff | 0 | -835776907 | -1332436576 | 1808923501 | -704847899
- + | de_DE.dic | 0 | 1295314130 | 1173116573 | 520580929 | -1359428921
+ \- | en_US.aff
+ \- | en_US.dic
+ \+ | custom.js | 0 | 1819190932 | 1869607806 | 899243074 | 1372911033
+ \+ | de_DE.aff | 0 | -835776907 | -1332436576 | 1808923501 | -704847899
+ \+ | de_DE.dic | 0 | 1295314130 | 1173116573 | 520580929 | -1359428921
  <> | VisualElements_150.png | | 1574030286 ~~-1704862931~~ | 1785742812 ~~1568697474~~ | 718587260 ~~1032327367~~ | -763802862 ~~-1241782593~~
  <> | VisualElements_70.png | | -785444957 ~~-1061646584~~ | 1559517179 ~~-2112712698~~ | 369161773 ~~1639502778~~ | 123592967 ~~-1023656082~~
 
