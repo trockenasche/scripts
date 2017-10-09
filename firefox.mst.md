@@ -21,7 +21,7 @@ DATA CHANGE - Component | Component | ComponentId | Directory_ | Attributes | Co
 
 DATA CHANGE - Directory | Directory | Directory_Parent | DefaultDir
 --- | --- | --- | ---
- <> | _PROGRAMMENUFOLDER_FRONTMOTION_FIREFOX | | MOZILL~1|Mozilla Firefox ~~FRONTM~1|FrontMotion Firefox~~
+ <> | _PROGRAMMENUFOLDER_FRONTMOTION_FIREFOX | | MOZILL~1\|Mozilla Firefox ~~FRONTM~1\|FrontMotion Firefox~~
 
 
 DATA CHANGE - Feature | Feature | Feature_Parent | Title | Description | Display | Level | Directory_ | Attributes
