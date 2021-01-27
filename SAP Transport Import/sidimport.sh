@@ -10,7 +10,7 @@ then
     AddMode="u1"  # e.g. u1
     ImportMode="" # e.g. u26
     Project=""
-    if ($Project);then Project="${Project}_"; fi
+    if ! ( $Project );then Project="${Project}_"; fi
     Logfile="./scriptlog/${SID}_${Project}$(date +%F_%H-%M-%S).log"
     timestamp() {
         date +%F_%T # current time
