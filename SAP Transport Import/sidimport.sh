@@ -20,6 +20,7 @@ then
     Cyan="\e[3;96m"
     Green="\e[3;32m"
     Yellow="\e[3;93m"
+    Magenta="\e[3;95m"
     ColorEnd="\e[0m"
     
     
@@ -28,7 +29,9 @@ then
         RC=${PIPESTATUS[0]}
         if [ "$RC" -ne 0 ]; then
             echo -e "${Red}$Transport: Code $RC: Fehler beim Anhängen!$ColorEnd" | tee -a "$Logfile"
+            echo -en "${Magenta}"
             read -rp "Unconditional Mode für diesen Transport setzten (z.B. u1) oder (A)bbrechen, (W)iederholen oder (F)ortsetzen und diesen überspringen? " InputAddMode </dev/tty
+            echo -en "${ColorEnd}"
             
             if [ "${InputAddMode,,}" == "a" ]; then
                 echo -e "User (A)bbruch!" | tee -a "$Logfile"
@@ -65,7 +68,9 @@ then
         RC=${PIPESTATUS[0]}
         if [ "$RC" -gt 4 ]; then
             echo -e "${Red}$Transport: Code $RC: Fehler beim Importieren!$ColorEnd" | tee -a "$Logfile"
+            echo -en "${Magenta}"
             read -rp "Unconditional Mode für diesen Transport setzten (z.B. u2) oder (A)bbrechen oder (F)ortsetzen und diesen überspringen? " InputImportMode </dev/tty
+            echo -en "${ColorEnd}"
             
             if [ "${InputImportMode,,}" == "a" ]; then
                 echo -e "User (A)bbruch!" | tee -a "$Logfile"
@@ -112,9 +117,9 @@ then
         
         if [[ $Transport == "Pause" ]];then
             while : ; do
-                echo -e "${Yellow}Pause entdeckt, "
-                read -rp "bitte mit (W)eitermachen oder (A)bbrechen? " InputPause </dev/tty
-                echo -e "${ColorEnd}"
+                echo -en "${Magenta}"
+                read -rp "Pause entdeckt, bitte mit (W)eitermachen oder (A)bbrechen? " InputPause </dev/tty
+                echo -en "${ColorEnd}"
                 
                 if [ "${InputPause,,}" == "w" ]; then
                     # Delete first occurrence of "Pause" from list.
@@ -144,4 +149,3 @@ else # File is empty
     echo -e "${Red}$File enthält keine Transporte!$ColorEnd"
     exit
 fi
-
