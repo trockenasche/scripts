@@ -105,10 +105,29 @@ then
     
     # Looping over transports
     while IFS= read -r Transport; do
-        Transport=$(echo -e "${Transport}" | tr -d "[:blank:]") #Trim whitespace
+        Transport=$(echo -e "${Transport}" | tr -d "[:blank:]") # Trim whitespace
         
         echo -e "${Cyan}----------$ColorEnd" | tee -a "$Logfile"
         echo -e "${Cyan}$Transport:$ColorEnd" | tee -a "$Logfile"
+        
+        if [[ $Transport == "Pause" ]];then
+            while : ; do
+                echo -e "${Yellow}Pause entdeckt, "
+                read -rp "bitte mit (W)eitermachen oder (A)bbrechen? " InputPause </dev/tty
+                echo -e "${ColorEnd}"
+                
+                if [ "${InputPause,,}" == "w" ]; then
+                    # Delete first occurrence of "Pause" from list.
+                    sed -i "0,/$Transport/d" "$File"
+                    continue 2
+                    elif [[ "${InputPause,,}" == "a"  ]]; then
+                    echo -e "${Red}Lauf wurde bei einer Pause abgebrochen.$ColorEnd" | tee -a "$Logfile"
+                    exit
+                else
+                    echo "Bitte w oder a drücken!"
+                fi
+            done
+        fi
         
         addtobuffer "$@"
         

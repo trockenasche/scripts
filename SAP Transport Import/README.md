@@ -10,5 +10,8 @@ The script uses the SID in the transport number to check which system the transp
 
 This script is used to add the transports from the list to the import queue and or import them.
 It checks for errors when adding and/or importing and, if necessary, the current transport can be restarted with a different unconditional mode or cancelled.
+
+It's also possible to add the word "Pause" to the list, to let the import pause at certain position until you press a certain key.
+
 Everything is written into a log file.
 
